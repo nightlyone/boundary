@@ -1,6 +1,6 @@
 boundary
 =========
-Go Reader and Writer splitting on boundaries.
+Go Writer splitting on boundaries.
 
 
 
