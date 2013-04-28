@@ -1,10 +1,8 @@
-package boundary_test
+package boundary
 
 import (
 	"bytes"
 	"testing"
-
-	"github.com/nightlyone/boundary"
 )
 
 // Simple writer backed by a slice of slices of bytes
@@ -17,7 +15,7 @@ func (a *AppendWriter) Write(p []byte) (int, error) {
 
 func TestWriter(t *testing.T) {
 	a := AppendWriter{}
-	w := boundary.NewWriter(&a, "\n", false)
+	w := NewWriter(&a, "\n", false)
 	sample := []byte("foo\nbar\nbaz")
 	want := bytes.SplitAfter(sample, []byte("\n"))
 	w.Write(sample)
