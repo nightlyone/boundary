@@ -2,8 +2,6 @@ boundary
 =========
 Go Writer splitting on boundaries.
 
-
-
 [![Build Status][1]][2]
 
 [1]: https://secure.travis-ci.org/nightlyone/boundary.png
