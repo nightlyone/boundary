@@ -1,2 +1,5 @@
 language: go
 
+script:
+	go test -i ./... && go test -v ./...
+
